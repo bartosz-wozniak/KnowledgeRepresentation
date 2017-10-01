@@ -1,4 +1,4 @@
-# Building Blocks
+# Knowledge Representation
 
 It is an application, from one field of AI - knowledge representation and reasonig, that allows to define your own action language and query language and execute your scenarios.
 Application is a WPF GUI desktop app.

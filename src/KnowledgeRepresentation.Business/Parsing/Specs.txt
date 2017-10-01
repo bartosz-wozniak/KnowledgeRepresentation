@@ -1,0 +1,31 @@
+﻿Domain sentences:
+    A lasts d causes α if π
+    A lasts d releases f if π
+    π triggers A
+    A invokes B after d if π
+    A impossible at t
+
+Queries:
+    always executable Sc
+    ever executable Sc
+    always holds γ at t when Sc
+    ever holds γ at t when Sc
+    A always occurs at t when Sc
+    A ever occurs at t when Sc
+
+Domain sentences/queries syntax: one sentence/query per line (i.e. new line is expression separator)
+
+Scenario syntax (sample):
+
+    Scenario_name:
+        T = 123
+        ACS = (some_action, 3) (some_action2, 5)
+        OBS = (a & b | !c, 0)
+
+
+From now on, every sentence/query/scenario will be called just a "sentence".
+
+If we want to denote boolean value, use true/false, not 0/1 (easier to parse, as it may be treated as keyword).
+&/| is easier to parse by-hand than &&/|| ;)
+Whitespaces do not matter (except newline - it DOES matter).
+Formal grammar won't be provided ;)

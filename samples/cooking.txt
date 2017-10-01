@@ -1,0 +1,11 @@
+rozmowa lasts 1 causes ZAKOCHANA if !ZAKOCHANA
+gotowanie lasts 2 causes OBIAD
+gotowanie lasts 3 causes OBIAD &SPALONY if ZAKOCHANA
+
+Scenariusz1:
+T = 4
+ACS = (gotowanie, 1)
+OBS = (!OBIAD & !SPALONY, 0) (OBIAD, 4)
+
+always holds !SPALONY & ZAKOCHANA at 4 when Scenariusz1
+ever holds !SPALONY & !ZAKOCHANA at 4 when Scenariusz1

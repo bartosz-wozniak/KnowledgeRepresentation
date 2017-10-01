@@ -1,0 +1,16 @@
+﻿<controls:MetroWindow
+    x:Class="KnowledgeRepresentation.App.Views.ShellView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    mc:Ignorable="d"
+    xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+    Title="ShellView" x:Name="Window" MinHeight="850" MinWidth="600">
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands>
+            <!-- Menu -->
+        </controls:WindowCommands>
+    </controls:MetroWindow.RightWindowCommands>
+    <controls:TransitioningContentControl x:Name="ActiveItem" Transition="Left" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+</controls:MetroWindow>

@@ -1,0 +1,15 @@
+work lasts 5 causes PROJECT if !TIRED
+work lasts 10 causes PROJECT if TIRED
+sleep lasts 8 causes !TIRED
+skates lasts 1 causes TIRED
+
+Scenariusz1:
+    T = 16
+    ACS = (skates, 0) (work, 2) (sleep, 7)
+    OBS = (!PROJECT, 0) (!TIRED & PROJECT, 16)
+Scenariusz2:
+    T = 16
+    ACS = (work, 0) (sleep, 6)
+    OBS = (!PROJECT, 0) (!TIRED & PROJECT, 16)
+ever executable Scenariusz2
+ever executable Scenariusz1
